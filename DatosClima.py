@@ -25,7 +25,7 @@ def obtener_ubicacion():
 
 def validar_datos(clima, ubicacion):
     if not clima or not ubicacion:
-        raise ValueError("Faltan datos para almacenar")
+        raise ValueError("Faltan datos para almacenar del clima")
     if "temperatura" not in clima or "ciudad" not in ubicacion:
         raise ValueError("Datos incompletos")
     return True
